@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Checker Tool</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>IP Checker Tool</h1>
+        <p class="subtitle">Lookup real IP geolocation & network data alongside generated identity-style mock data.</p>
+      </header>
+      
+      <main>
+        <div class="input-group">
+          <input type="text" id="ip-input" placeholder="Enter IPv4 address (e.g. 192.168.1.1)" autocomplete="off" />
+          <button id="lookup-btn">Lookup</button>
+        </div>
+        <div id="error-message" class="error-message hidden"></div>
+        
+        <div id="results-container" class="results-container hidden">
+          <div class="results-header">
+            <h2>Results</h2>
+            <button id="copy-all-btn" class="copy-all-btn">Copy All</button>
+          </div>
+          <ul id="results-list" class="results-list"></ul>
+          <div class="notice">
+            <strong>Mandatory Notice:</strong> IP geolocation provides approximate location data. Exact physical addresses cannot be determined from an IP address.
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+

@@ -1,0 +1,5 @@
+{
+  "name": "IP Checker Tool",
+  "description": "A browser-based web application that accepts an IPv4 address and displays real IP Geolocation & Network Data alongside generated identity-style mock data.",
+  "requestFramePermissions": []
+}
