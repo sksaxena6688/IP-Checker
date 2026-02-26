@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌐 IP Checker Tool
 
-# Run and deploy your AI Studio app
+A modern web-based IP lookup tool that validates IPv4 addresses and displays:
 
-This contains everything you need to run your app locally.
+• Real geolocation & network metadata  
+• Client-side generated identity-style data  
+• Per-field copy functionality  
 
-View your app in AI Studio: https://ai.studio/apps/60d7bfa9-134f-4db6-aa15-789669ad5fca
+Built using **Vite + TypeScript + Vanilla CSS**
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🚀 Features
 
+✅ IPv4 address validation  
+✅ Real IP geolocation lookup (via public API)  
+✅ ISP / Network detection  
+✅ Generated mock identity data  
+✅ Copy button for every field  
+✅ Copy All support  
+✅ Error-safe UI behavior  
+✅ Responsive layout  
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🧠 How It Works
+
+1. User enters an IPv4 address  
+2. Application validates format  
+3. Real geolocation data fetched from API  
+4. Identity-style data generated locally  
+5. Results displayed in structured layout  
+
+---
+
+## 📦 Data Sources
+
+Geolocation & network metadata are retrieved from:
+
+https://ipapi.co/
+
+Identity-related fields are **purely mock data** generated on the client side.
+
+---
+
+## ⚠ Important Notice
+
+IP geolocation provides **approximate location data only**.
+
+Exact physical addresses or real user identities **cannot be derived from an IP address**.
+
+All identity-style fields shown in this tool are randomly generated for UI / demonstration purposes.
+
+---
+
+## 🛠 Tech Stack
+
+- Vite
+- TypeScript
+- Vanilla CSS
+- Fetch API
+- Clipboard API
+
+---
+
+## ▶ Running Locally
+
+Install dependencies:
+
+```bash
+npm install
